@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.repo-memory/
+test-fixtures/fake-repo/
+.DS_Store
+
+.dogfood-runs/
+.mcp-test/

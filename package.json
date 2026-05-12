@@ -1,0 +1,58 @@
+{
+  "name": "repo-memory-mcp",
+  "version": "0.1.0",
+  "description": "Local-first, repo-scoped engineering memory MCP server and CLI for coding agents.",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "tsx src/smoke-test.ts",
+    "demo": "tsx src/demo.ts",
+    "build": "tsc",
+    "dev": "tsx src/server.ts",
+    "stress": "tsx src/stress-test.ts",
+    "prepare": "npm run build",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "ai",
+    "coding-agents",
+    "memory",
+    "sqlite",
+    "developer-tools"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "repo-memory-mcp": "dist/server.js",
+    "repo-memory": "dist/cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "better-sqlite3": "^12.9.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.6.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  },
+  "types": "dist/server.d.ts",
+  "homepage": "https://github.com/pinchworth-ops/repo-memory-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinchworth-ops/repo-memory-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pinchworth-ops/repo-memory-mcp/issues"
+  },
+  "files": [
+    "dist/",
+    "dashboard/",
+    "docs/",
+    "README.md",
+    "package.json",
+    "scripts/"
+  ]
+}
